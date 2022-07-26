@@ -35,6 +35,8 @@ steps:
     pytest
   displayName: 'pytest'
 
-- script: |
-    print("Hello World!")
+- task: PythonScript@0
+  inputs:
+    script: |
+      print('Hello World!)
   displayName: "Printing 'Hello World!'"
